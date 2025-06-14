@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>The Brunch</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--====== Google Fonts ======-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header-area navigation-dark">
+        <div class="container">
+            <div class="header-navigation">
+               
+                <div class="primary-menu">
+                    <!--=== Site Branding ===-->
+                    <div class="site-branding">
+                        <a href="index.html" class="brand-logo"><img src="/logo-white.png" alt="Logo"></a>
+                    </div>
+                    <div class="nav-inner-menu">
+                        <!--===  Nav Menu ===-->
+                        <div class="nav-menu">
+                          
+                            <!--=== Main Menu ===-->
+                            <nav class="main-menu">
+                                <ul>
+                                    <li class="menu-item"><a href="index.html">Home</a></li>
+                                    <li class="menu-item"><a href="product.html">Menu</a></li>
+                                    <li class="menu-item"><a href="about.html">About Us</a></li>
+                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-button mt-50 d-block d-xl-none  text-center">
+                                    <a href="login.html" class="theme-btn style-one"><i class="fal fa-user"></i> Login/Signup</a>
+                                 <button id="logoutBtn"  style="display: none;" class="btn btn-secondary theme-btn style-one logoutBtn"><i class="far fa-sign-out"></i> Logout</button>
+                                </div>
+                        </div>
+                        <!--=== Nav Right Item ===-->
+                        <div class="nav-right-item">
+                            <!-- <a href="wishlist.html" class="cart-icon wishlist_item">
+                                     <i class="far fa-heart"></i> 
+                                </a> -->
+                                <a href="wishlist.html" class="wishlist-link position-relative wishlist_item">
+                                    <i class="far fa-heart"></i>
+                                    <span class="wishlist-count badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">0</span>
+                                </a>
+                            <div class="cart-button">
+                               <!-- <a href="cart.html"> <i class="fal fa-shopping-cart"></i>
+                                    <span id="cart-quantity-badge" style="display:none;">0</span>
+                                </a> -->
+                                <a href="cart.html" class="cart-icon">
+                                     <i class="fal fa-shopping-cart"></i> <span id="cart-count" style="display:none; background:red; color:white; border-radius:50%; padding:2px 6px;">0</span>
+                                </a>
+                                
+                            </div>
+                            <div class="nav-button d-none d-xl-block">
+
+                                <a href="login.html" class="theme-btn style-one"><i class="fal fa-user"></i> Login/Signup</a>
+                                 <button id="logoutBtn"  style="display: none;" class="btn btn-secondary theme-btn style-one logoutBtn"><i class="far fa-sign-out"></i> Logout</button>
+                            </div>
+                             <div class="navbar-toggler">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--====== End Header Area ======-->
+  
+    <!--====== Start About Section ======-->
+    <section class="cart_listing pt-30 pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                     <div class="alert alert-danger py-2" role="alert" style="background: #FFEDED; color: black;border: none;"><strong>Returning customer?</strong> <a href="#">Click here</a></div>
+                </div>
+                <div class="col-md-7">
+                      <div class="panel panel-info">
+                       
+                        <div class="panel-body">
+                            <div class="form-group mb-25">
+                                <div class="col-md-12">
+                                    <h4>Billing Details</h4>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-15">
+                                            <input type="text" name="first_name" class="form-control" value="" placeholder="First Name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-15">
+                                            <input type="text" name="last_name" class="form-control" value="" placeholder="Last Name" />
+                                        </div>
+                                    </div>
+                                     <div class="col-md-12">
+                                        <div class="form-group mb-15">
+                                            <input type="text" name="address" class="form-control" value="" placeholder="Your Address" />
+                                        </div>
+                                    </div>
+                                     <div class="col-md-6">
+                                        <div class="form-group mb-15">
+                                            <input type="text" class="form-control" name="country" value="" placeholder="Your Country" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-15">
+                                            <input type="text" name="city" class="form-control" value="" placeholder="Your City" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-15">
+                                            <input type="text" name="zip_code" class="form-control" value="" placeholder="Postcode/Zip" />
+                                        </div>
+                                    </div>
+                                  <div class="col-md-6">
+                                        <div class="form-group mb-15">
+                                            <input type="text" name="phone_number" class="form-control" value="" placeholder="Your Phone" />
+                                        </div>
+                                    </div>
+                            </div> -->
+                            <form id="paymentForm">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-15">
+                                            <input type="text" name="first_name" class="form-control" value="" placeholder="First Name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-15">
+                                            <input type="text" name="last_name" class="form-control" value="" placeholder="Last Name" />
+                                        </div>
+                                    </div>
+                                     <div class="col-md-12">
+                                        <div class="form-group mb-15">
+                                            <input type="text" name="address" class="form-control" value="" placeholder="Your Address" />
+                                        </div>
+                                    </div>
+                                     <div class="col-md-6">
+                                        <div class="form-group mb-15">
+                                            <input type="text" class="form-control" name="country" value="" placeholder="Your Country" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-15">
+                                            <input type="text" name="city" class="form-control" value="" placeholder="Your City" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-15">
+                                            <input type="text" name="zip_code" class="form-control" value="" placeholder="Postcode/Zip" />
+                                        </div>
+                                    </div>
+                                  <div class="col-md-6">
+                                        <div class="form-group mb-15">
+                                            <input type="text" name="phone_number" class="form-control" value="" placeholder="Your Phone" />
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                               
+
+                            <br>
+                            <div class="form-group mb-25">
+                                <div class="col-md-12">
+                                    <h4>Payment Method</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                               <!--  <div class="accordion" id="accordionExample">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                           <input type="radio" name="accordion-radio" class="accordion-radio">
+                                            Cash On Delivery
+                                          </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                          Pay with cash remains a simple and reliable choice, transcending the complexities of modern finance.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                           <input type="radio" name="accordion-radio" class="accordion-radio">
+                                            Direct Bank Transfer
+                                          </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                           Pay with cash remains a simple and reliable choice, transcending the complexities of modern finance.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                           <input type="radio" name="accordion-radio" class="accordion-radio">
+                                            Paypal
+                                          </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            Pay with cash remains a simple and reliable choice, transcending the complexities of modern finance.
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div> -->
+                                <div class="accordion">
+                                      <div class="accordion-item">
+                                        <div class="accordion-header accordion-button"><input type="radio" name="accordion-radio" class="accordion-radio" checked> Cash On Delivery
+                                          
+                                        </div>
+                                        <div class="accordion-content">Pay with cash remains a simple and reliable choice, transcending the complexities of modern finance.</div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <div class="accordion-header accordion-button"><input type="radio" name="accordion-radio" class="accordion-radio"> Direct Bank Transfer
+                                          
+                                        </div>
+                                        <div class="accordion-content">Pay with cash remains a simple and reliable choice, transcending the complexities of modern finance.</div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <div class="accordion-header accordion-button"><input type="radio" name="accordion-radio" class="accordion-radio"> Paypal
+                                          
+                                        </div>
+                                        <div class="accordion-content">Pay with cash remains a simple and reliable choice, transcending the complexities of modern finance.</div>
+                                      </div>
+                                    </div>
+                            </div>
+                            <!-- <button type="submit" data-mdb-button-init="" data-mdb-ripple-init="" class="btn btn-primary btn-lg btn-block mb-25 btn_checkout px-5 mt-4"  data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-arrow-circle-right"></i> Place Order</button> -->
+                             <button type="submit" id="btn_checkout" class="btn btn-primary btn-lg btn-block mb-25 btn_checkout px-5 mt-4"><i class="fas fa-arrow-circle-right"></i> Place Order</button>
+                        </form>  
+                           
+                           
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card mb-4 order_summ">
+                      <div class="card-header py-3">
+                        <h4 class="mb-0">Order Summary</h4>
+                      </div>
+                      <div class="card mb-4 order_summ">
+                     
+                      <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0 mb-10">
+                            Products
+                            <div id="cart-total"> ₹0</div>
+                          </li>
+                         <li class="list-group-item d-flex justify-content-between align-items-center px-0 mb-10">
+                            Shipping
+                            <p id="shipping-charge">
+                                <span id="shipping-text">₹5</span>
+                                <span id="free" style="display:none; color: green; margin-left: 10px;">Free</span>
+                            </p>
+                         </li>
+                          <li
+                            class="list-group-item d-flex justify-content-between align-items-center  total_amt mb-10">
+                            <div>
+                              <strong>Total amount</strong>
+                             
+                            </div>
+                            <span id="grand-total"><strong></strong></span>
+                          </li>
+                        </ul>
+
+                      
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                   <div class="col-md-6 col-sm-6 col-xs-12">  
+                       <button type="button" data-mdb-button-init="" data-mdb-ripple-init="" class="btn btn-primary btn-lg btn-block mb-25 btn_checkout px-5 mt-4"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              <i class="fas fa-arrow-circle-right"></i> Place Order
+                        </button> 
+                        
+                     
+                    </div>
+                    
+               </div>-->
+        </div>
+    </section> 
+    <!--====== End About Section ======-->
+
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="far fa-times"></i></button>
+      <div class="modal-header flex-column">
+        <img src="/tick.svg">
+        <h1 class="modal-title fs-4" id="exampleModalLabel">Your order is on the way!</h1>
+        <p>Great news! Your order is all set to hit the road. We're packing it up with care and it'll be on its way to you in no time.</p>
+        
+      </div>
+      <div class="modal-body">
+        <div class="order-details">
+            <h3>Order Details</h3>
+            <div class="d-flex justify-content-center align-items-center">
+                  <img src="/cart1.png" class="w-auto" alt="">
+                  <p class="price_final">£27.90 <span class="item_name"><strong>Margherita</strong></span></p>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div> -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="far fa-times"></i></button>
+      <div class="modal-header flex-column">
+        <img src="/tick.svg">
+        <h1 class="modal-title fs-4" id="exampleModalLabel">Your order is on the way!</h1>
+        <p>Great news! Your order is all set to hit the road. We're packing it up with care and it'll be on its way to you in no time.</p>
+        
+      </div>
+      <div class="modal-body">
+        <!-- <div class="order-details">
+            <h3>Order Details</h3>
+            <div class="d-flex justify-content-center align-items-center">
+                  <img src="/cart1.png" class="w-auto" alt="">
+                  <p class="price_final">£27.90 <span class="item_name"><strong>Margherita</strong></span></p>
+            </div>
+          
+        </div> -->
+        <img src="delivery-per.png" style=" display: block;margin: 0 auto;max-width: 50%;"/>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+   <footer class="footer-default p-r z-1">
+       
+        <div class="container">
+            <!--=== Footer Widget Area ===-->
+            <div class="footer-widget-area pt-50 pb-0">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget footer-about-widget mb-40 wow fadeInUp">
+                            <div class="widget-content">
+                                <div class="footer-logo mb-25">
+                                    <a href="index.html"><img src="/logo2.png" alt="Brand Logo" width="200"></a>
+                                </div>
+                                <p>Discover culinary delights recipes and inspiration in our delightful food haven..</p>
+                                <ul class="social-link">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget footer-opening-widget mb-40 wow fadeInUp">
+                            <div class="widget-content">
+                                <h4 class="widget-title">Get Exclusive Deals in your Inbox</h4>
+                                      <div class="form-box">
+                                        <div class="input-main">
+                                            <input type="email" id="newsletter-email" placeholder="Your Email">
+                                        </div>
+                                        <button class="submit" id="subscribe-btn" type="button">Subscribe</button>
+                                        
+                                    </div>
+                                    <p id="subscribe-message" style="margin-top: 10px;"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget footer-nav-widget mb-40 wow fadeInUp">
+                            <div class="widget-content">
+                                <h4 class="widget-title">Quick Link</h4>
+                                <ul class="widget-menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                  
+                                    <li><a href="product.html">Our Menu</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget footer-contact-widget mb-40 wow fadeInUp">
+                            <div class="widget-content">
+                                <h4 class="widget-title">Contact Us</h4>
+                                <ul class="address-list">
+                                    <li>20, floor, Queenslad Victoria Building. 60 california street california USA</li>
+                                    <li><a href="tel:+88 000 0000 1111">+88 000 0000 1111</a></li>
+                                    <li><a href="mailto:support@thebrunch.com">support@thebrunch.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=== Copyright Area ===-->
+        <div class="copyright-area text-center">
+            <div class="container">
+                <div class="row copyright-text">
+                    <div class="col-md-6">
+                        <p>Copyright 2025 All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="d-flex justify-content-end">
+                            <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                            <li><a href="javascript:void(0)">Terms</a></li>
+                            <li><a href="javascript:void(0)">Pricing</a></li>
+                            <li><a href="javascript:void(0)">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Validation Error Modal -->
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-danger">
+      
+       
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"><i class="far fa-times"></i></button>
+      
+      <div class="modal-body">
+        <ul id="errorList" class="list-unstyled mb-0 text-danger"></ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+    <!--====== End Footer ======-->
+    <!--====== Back To Top  ======-->
+
+<script type="module" src="src/main.js"></script>
+
+<script type="module" src="wishlist.js"></script>
+ <script type="module" src="Cart.js" defer></script> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script>
+  document.getElementById("paymentForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const firstName = form.first_name.value.trim();
+    const lastName = form.last_name.value.trim();
+    const address = form.address.value.trim();
+    const country = form.country.value.trim();
+    const city = form.city.value.trim();
+    const zip = form.zip_code.value.trim();
+    const phone = form.phone_number.value.trim();
+
+    const errors = [];
+
+    if (!firstName) errors.push("First Name is required.");
+    if (!lastName) errors.push("Last Name is required.");
+    if (!address) errors.push("Address is required.");
+    if (!country) errors.push("Country is required.");
+    if (!city) errors.push("City is required.");
+    if (!zip || !/^\d{4,10}$/.test(zip)) errors.push("Enter a valid Zip/Postal code.");
+    if (!phone || !/^\d{7,15}$/.test(phone)) errors.push("Enter a valid phone number.");
+
+    const errorList = document.getElementById("errorList");
+    errorList.innerHTML = ""; // Clear old errors
+
+    if (errors.length > 0) {
+      errors.forEach(err => {
+        const li = document.createElement("li");
+        li.textContent = " " + err;
+        errorList.appendChild(li);
+      });
+
+      // Show Bootstrap modal
+      const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+      errorModal.show();
+    } else {
+      // You can proceed with form submission
+      alert("Form submitted successfully!");
+      form.submit(); // or handle submission via AJAX
+    }
+  });
+</script> -->
+<script>
+  document.addEventListener("DOMContentLoaded", async function () {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const products = await fetch("products.json").then(res => res.json());
+
+    let subtotal = 0;
+
+    cart.forEach(item => {
+      const product = products.find(p => p.id == item.id);
+      if (product) {
+        const qty = parseInt(item.qty || 1);
+        const price = parseFloat(product.price || 0);
+        subtotal += price * qty;
+      }
+    });
+
+    // Determine shipping
+    let shippingCharge = 5;
+    if (subtotal >= 500) {
+      shippingCharge = 0;
+      document.getElementById("shipping-text").style.textDecoration = "line-through";
+      document.getElementById("free").style.display = "inline";
+    } else {
+      document.getElementById("shipping-text").style.textDecoration = "none";
+      document.getElementById("free").style.display = "none";
+    }
+
+    const grandTotal = subtotal + shippingCharge;
+
+    document.getElementById("cart-total").textContent = `₹${subtotal.toFixed(2)}`;
+    document.getElementById("shipping-text").textContent = `₹5`;
+    document.getElementById("grand-total").innerHTML = `<strong>₹${grandTotal.toFixed(2)}</strong>`;
+  });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("paymentForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const firstName = form.first_name.value.trim();
+    const lastName = form.last_name.value.trim();
+    const address = form.address.value.trim();
+    const country = form.country.value.trim();
+    const city = form.city.value.trim();
+    const zip = form.zip_code.value.trim();
+    const phone = form.phone_number.value.trim();
+
+    const errors = [];
+
+    if (!firstName) errors.push("First Name is required.");
+    if (!lastName) errors.push("Last Name is required.");
+    if (!address) errors.push("Address is required.");
+    if (!country) errors.push("Country is required.");
+    if (!city) errors.push("City is required.");
+    if (!/^\d{4,10}$/.test(zip)) errors.push("Enter a valid Zip/Postal code.");
+    if (!/^\d{7,15}$/.test(phone)) errors.push("Enter a valid phone number.");
+
+    const errorList = document.getElementById("errorList");
+    errorList.innerHTML = "";
+
+    if (errors.length > 0) {
+      errors.forEach(err => {
+        const li = document.createElement("li");
+        li.textContent = err;
+        errorList.appendChild(li);
+      });
+
+      const errorModal = new bootstrap.Modal(document.getElementById("errorModal"));
+      errorModal.show();
+    } else {
+      const exampleModal = new bootstrap.Modal(document.getElementById("exampleModal"));
+      exampleModal.show();
+    }
+  });
+
+  document.getElementById("confirmOrder").addEventListener("click", function () {
+    // Optional: Submit the form using JS or redirect
+    alert("Order placed successfully!");
+    document.getElementById("paymentForm").submit();
+  });
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const subscribeBtn = document.getElementById("subscribe-btn");
+    const emailInput = document.getElementById("newsletter-email");
+    const messageEl = document.getElementById("subscribe-message");
+
+    subscribeBtn.addEventListener("click", () => {
+      const email = emailInput.value.trim();
+
+      // Basic email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!email) {
+        showMessage("Please enter your email.", "red");
+      } else if (!emailRegex.test(email)) {
+        showMessage("Please enter a valid email address.", "red");
+      } else {
+        // Simulate subscription success
+        showMessage("Thank you for subscribing!", "green");
+
+        // Optional: Store in localStorage
+        // localStorage.setItem("subscribedEmail", email);
+
+        // Clear the input
+        emailInput.value = "";
+      }
+    });
+
+    function showMessage(text, color) {
+      messageEl.textContent = text;
+      messageEl.style.color = color;
+    }
+  });
+</script>
+<script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+  const loginForm = document.getElementById("loginForm");
+  const logoutBtns = document.querySelectorAll(".logoutBtn");
+  const loginLinks = document.querySelectorAll("a[href='login.html']");
+
+  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+
+  // Show/hide buttons based on login state
+  if (isLoggedIn) {
+    logoutBtns.forEach(btn => btn.style.display = "inline-block");
+    loginLinks.forEach(link => link.style.display = "none");
+  } else {
+    logoutBtns.forEach(btn => btn.style.display = "none");
+    loginLinks.forEach(link => link.style.display = "inline-block");
+  }
+
+  // Login form logic
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const email = loginForm.elements["first_name"].value.trim();
+      const password = loginForm.elements["last_name"].value.trim();
+
+      if (!email || !password) {
+        alert("Please enter both email and password.");
+        return;
+      }
+
+      localStorage.setItem("isLoggedIn", "true");
+      alert("Login successful!");
+      location.href = "index.html"; // redirect
+    });
+  }
+
+  // Logout logic
+  logoutBtns.forEach(btn => {
+    btn.addEventListener("click", function () {
+      localStorage.removeItem("isLoggedIn");
+      alert("Logged out successfully.");
+      location.reload();
+    });
+  });
+});
+
+</script>
+</body>
+
+</html>

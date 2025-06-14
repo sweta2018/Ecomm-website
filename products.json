@@ -1,0 +1,100 @@
+[
+  {
+    "id": "p1",
+     "name": "Classic Chicken",
+    "price": 120,
+    "image": "b1.jpg",
+    "category": "Burger"
+  },
+  {
+    "id": "p2",
+    "name": "Cheese Burger",
+    "price": 100,
+    "image": "b2.jpg",
+    "category": "Burger"
+  },
+  {
+    "id": "p3",
+    "name": "Grilled Burger",
+    "price": 100,
+    "image": "b3.jpg",
+    "category": "Burger"
+  },
+  {
+    "id": "p4",
+    "name": "Chicken Sandwich",
+    "price": 100,
+    "image": "s1.jpg",
+     "category": "Sandwiches"
+  },
+  {
+    "id": "p5",
+    "name": "Veg Sandwich",
+    "price": 100,
+    "image": "s2.jpg",
+    "category": "Sandwiches"
+  },
+  {
+    "id": "p6",
+    "name": "Corn Sandwich",
+    "price": 100,
+    "image": "s3.jpg",
+    "category": "Sandwiches"
+  },
+  {
+    "id": "p7",
+    "name": "Noodles",
+    "price": 100,
+    "image": "c1.jpg",
+    "category": "Chinese Cuisine"
+  },
+   {
+    "id": "p8",
+    "name": "Fried Rice",
+    "price": 100,
+    "image": "c2.jpg",
+    "category": "Chinese Cuisine"
+  },
+  {
+    "id": "p9",
+    "name": "Chilli Chicken",
+    "price": 100,
+    "image": "c3.jpg",
+    "category": "Chinese Cuisine"
+  },
+  {
+    "id": "p10",
+    "name": "Chilli Fish",
+    "price": 100,
+    "image": "c4.jpg",
+    "category": "Chinese Cuisine"
+  },
+  {
+    "id": "p11",
+    "name": "Chicken Biriyani",
+    "price": 100,
+    "image": "br1.jpg",
+    "category": "Biriyani"
+  },
+  {
+    "id": "p12",
+    "name": "Mutton Biriyani",
+    "price": 100,
+    "image": "br2.jpg",
+    "category": "Biriyani"
+  },
+  {
+    "id": "p13",
+    "name": "Chicken Chap",
+    "price": 100,
+    "image": "br3.jpg",
+    "category": "Biriyani"
+  },
+  {
+    "id": "p14",
+    "name": "Egg Biriyani",
+    "price": 100,
+    "image": "br4.jpg",
+    "category": "Biriyani"
+  }
+]

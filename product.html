@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>The Brunch</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <!--====== Google Fonts ======-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header-area navigation-dark">
+       <div class="container">
+            <div class="header-navigation">
+               
+                <div class="primary-menu">
+                    <!--=== Site Branding ===-->
+                    <div class="site-branding">
+                        <a href="index.html" class="brand-logo"><img src="/logo-white.png" alt="Logo"></a>
+                    </div>
+                    <div class="nav-inner-menu">
+                        <!--===  Nav Menu ===-->
+                        <div class="nav-menu">
+                          
+                            <!--=== Main Menu ===-->
+                            <nav class="main-menu">
+                                <ul>
+                                    <li class="menu-item"><a href="index.html">Home</a></li>
+                                    <li class="menu-item active"><a href="product.html">Menu</a></li>
+                                    <li class="menu-item"><a href="about.html">About Us</a></li>
+                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-button mt-50 d-block d-xl-none  text-center">
+                                    <a href="login.html" class="theme-btn style-one"><i class="fal fa-user"></i> Login/Signup</a>
+                                     <button id="logoutBtn"  style="display: none;" class="btn btn-secondary theme-btn style-one logoutBtn"><i class="far fa-sign-out"></i> Logout</button>
+                                </div>
+                        </div>
+                        <!--=== Nav Right Item ===-->
+                        <div class="nav-right-item">
+                            <!-- <a href="wishlist.html" class="cart-icon wishlist_item">
+                                     <i class="far fa-heart"></i> 
+                                </a> -->
+                                <a href="wishlist.html" class="wishlist-link position-relative wishlist_item">
+                                    <i class="far fa-heart"></i>
+                                    <span class="wishlist-count badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">0</span>
+                                </a>
+                            <div class="cart-button">
+                               <!-- <a href="cart.html"> <i class="fal fa-shopping-cart"></i>
+                                    <span id="cart-quantity-badge" style="display:none;">0</span>
+                                </a> -->
+                                <a href="cart.html" class="cart-icon">
+                                     <i class="fal fa-shopping-cart"></i> <span id="cart-count" style="display:none; background:red; color:white; border-radius:50%; padding:2px 6px;">0</span>
+                                </a>
+                                
+                            </div>
+                            <div class="nav-button d-none d-xl-block">
+
+                                <a href="login.html" class="theme-btn style-one"><i class="fal fa-user"></i> Login/Signup</a>
+                                 <button id="logoutBtn"  style="display: none;" class="btn btn-secondary theme-btn style-one logoutBtn"><i class="far fa-sign-out"></i> Logout</button>
+                            </div>
+                             <div class="navbar-toggler">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--====== End Header Area ======-->
+   <section class="page-banner">
+            <div class="page-bg-wrapper p-r z-1 bg_cover pt-40 pb-40" style="background-image: url(/page-bg.jpg);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!--=== Page Banner Content ===-->
+                            <div class="page-banner-content text-center">
+                                <h1 class="page-title">Our Product</h1>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--====== Start About Section ======-->
+    <!-- <section class="product_listing pt-30 pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product__card">
+                        <img src="/product-1.png" class="img-fluid">
+                         <div class="price_product d-flex align-items-center justify-space-between">
+                             <p>$18 </p>        
+                                <ul class="ratings">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li class="rating"> 4.7</li>
+                                    </ul>  
+                         </div>
+                         <h3>Smoked Paprika Sirloin</h3>
+                         <a href="#" class="theme-btn style-one border-btm" tabindex="0"><img src="/cart.svg"> Add to cart</a>
+                         <div class="wishlist"><a href="#"><i class="far fa-heart"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product__card">
+                        <img src="/product-1.png" class="img-fluid">
+                         <div class="price_product d-flex align-items-center justify-space-between">
+                             <p>$18 </p>        
+                                <ul class="ratings">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li class="rating"> 4.7</li>
+                                    </ul>  
+                         </div>
+                         <h3>Smoked Paprika Sirloin</h3>
+                         <a href="#" class="theme-btn style-one border-btm" tabindex="0"><img src="/cart.svg"> Add to cart</a>
+                         <div class="wishlist"><a href="#"><i class="far fa-heart"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product__card">
+                        <img src="/product-1.png" class="img-fluid">
+                         <div class="price_product d-flex align-items-center justify-space-between">
+                             <p>$18 </p>        
+                                <ul class="ratings">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li class="rating"> 4.7</li>
+                                    </ul>  
+                         </div>
+                         <h3>Smoked Paprika Sirloin</h3>
+                         <a href="#" class="theme-btn style-one border-btm" tabindex="0"><img src="/cart.svg"> Add to cart</a>
+                         <div class="wishlist"><a href="#"><i class="far fa-heart"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product__card">
+                        <img src="/product-1.png" class="img-fluid">
+                         <div class="price_product d-flex align-items-center justify-space-between">
+                             <p>$18 </p>        
+                                <ul class="ratings">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li class="rating"> 4.7</li>
+                                    </ul>  
+                         </div>
+                         <h3>Smoked Paprika Sirloin</h3>
+                         <a href="#" class="theme-btn style-one border-btm" tabindex="0"><img src="/cart.svg"> Add to cart</a>
+                         <div class="wishlist"><a href="#"><i class="far fa-heart"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product__card">
+                        <img src="/product-1.png" class="img-fluid">
+                         <div class="price_product d-flex align-items-center justify-space-between">
+                             <p>$18 </p>        
+                                <ul class="ratings">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li class="rating"> 4.7</li>
+                                    </ul>  
+                         </div>
+                         <h3>Smoked Paprika Sirloin</h3>
+                         <a href="#" class="theme-btn style-one border-btm" tabindex="0"><img src="/cart.svg"> Add to cart</a>
+                         <div class="wishlist"><a href="#"><i class="far fa-heart"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product__card">
+                        <img src="/product-1.png" class="img-fluid">
+                         <div class="price_product d-flex align-items-center justify-space-between">
+                             <p>$18 </p>        
+                                <ul class="ratings">
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li class="rating"> 4.7</li>
+                                    </ul>  
+                         </div>
+                         <h3>Smoked Paprika Sirloin</h3>
+                         <a href="#" class="theme-btn style-one border-btm" tabindex="0"><img src="/cart.svg"> Add to cart</a>
+                         <div class="wishlist"><a href="#"><i class="far fa-heart"></i></a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+    <!--====== End About Section ======-->
+ <section class="menu-section pt-50 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--== Section Title ===-->
+                    <div class="section-title text-center  wow fadeInDown">
+                        <span class="sub-title">Our Menu</span>
+                        <h2>Choose Menu</h2>
+                    </div>
+                </div>
+            </div>
+                <div id="productAccordion">
+                    <!-- <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tabs style-four mb-50">
+                            <ul class="nav nav-tabs wow fadeInDown" role="tablist" style="visibility: visible; animation-name: fadeInDown;">
+                            
+                            </ul>
+                            </div>
+                        </div>
+                    </div> -->
+                     <div class="tabs style-four mb-50 category-tabs justify-content-center d-flex gap-3">
+                       
+                        <button class="nav nav-tabs wow fadeInDown nav-link category-tab" data-category="" style="display: none;"></button>
+                    </div> 
+
+                    <!-- <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tab-content">
+                        
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Product Card Template Container -->
+                    <div class="product-list row">
+                        
+                            <div class="product-card col-md-4  mb-30 " data-id="" data-category="" style="display: none;">
+                                <div class="menu-item-carousel">
+                                    <img class="product-image" src="" alt="">
+                                    <div class="menu-content-wrap">
+                                        <h4 class="product-name"></h4>
+                                        <p class="product-price price"></p>
+                                        <div class="product-actions">
+                                            <button class="add-to-cart-btn theme-btn style-one border-btm" data-product-id=""><img src="cart.svg"> Add to Cart</button>
+                                              <button class="add-to-wishlist-btn wishlist" data-product-id=""><i class="far fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        
+                        
+                    </div>
+                </div>
+        </div>
+</section>
+
+   <div id="toast-container" style="
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+"></div>
+   <footer class="footer-default p-r z-1">
+       
+        <div class="container">
+            <!--=== Footer Widget Area ===-->
+            <div class="footer-widget-area pt-50 pb-0">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget footer-about-widget mb-40 wow fadeInUp">
+                            <div class="widget-content">
+                                <div class="footer-logo mb-25">
+                                    <a href="index.html"><img src="/logo2.png" alt="Brand Logo" width="200"></a>
+                                </div>
+                                <p>Discover culinary delights recipes and inspiration in our delightful food haven..</p>
+                                <ul class="social-link">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget footer-opening-widget mb-40 wow fadeInUp">
+                            <div class="widget-content">
+                                <h4 class="widget-title">Get Exclusive Deals in your Inbox</h4>
+                                      <div class="form-box">
+                                        <div class="input-main">
+                                            <input type="email" id="newsletter-email" placeholder="Your Email">
+                                        </div>
+                                        <button class="submit" id="subscribe-btn" type="button">Subscribe</button>
+                                        
+                                    </div>
+                                    <p id="subscribe-message" style="margin-top: 10px;"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget footer-nav-widget mb-40 wow fadeInUp">
+                            <div class="widget-content">
+                                <h4 class="widget-title">Quick Link</h4>
+                                <ul class="widget-menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                  
+                                    <li><a href="product.html">Our Menu</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget footer-contact-widget mb-40 wow fadeInUp">
+                            <div class="widget-content">
+                                <h4 class="widget-title">Contact Us</h4>
+                                <ul class="address-list">
+                                    <li>20, floor, Queenslad Victoria Building. 60 california street california USA</li>
+                                    <li><a href="tel:+88 000 0000 1111">+88 000 0000 1111</a></li>
+                                    <li><a href="mailto:support@thebrunch.com">support@thebrunch.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=== Copyright Area ===-->
+        <div class="copyright-area text-center">
+            <div class="container">
+                <div class="row copyright-text">
+                    <div class="col-md-6">
+                        <p>Copyright 2025 All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="d-flex justify-content-end">
+                            <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                            <li><a href="javascript:void(0)">Terms</a></li>
+                            <li><a href="javascript:void(0)">Pricing</a></li>
+                            <li><a href="javascript:void(0)">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====== End Footer ======-->
+    <!--====== Back To Top  ======-->
+
+<script type="module" src="src/main.js"></script>
+
+<script type="module" src="Cart.js"></script>
+<!-- <script type="module" src="wishlist.js" defer></script> -->
+<script type="module" src="menuProducts.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const subscribeBtn = document.getElementById("subscribe-btn");
+    const emailInput = document.getElementById("newsletter-email");
+    const messageEl = document.getElementById("subscribe-message");
+
+    subscribeBtn.addEventListener("click", () => {
+      const email = emailInput.value.trim();
+
+      // Basic email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!email) {
+        showMessage("Please enter your email.", "red");
+      } else if (!emailRegex.test(email)) {
+        showMessage("Please enter a valid email address.", "red");
+      } else {
+        // Simulate subscription success
+        showMessage("Thank you for subscribing!", "green");
+
+        // Optional: Store in localStorage
+        // localStorage.setItem("subscribedEmail", email);
+
+        // Clear the input
+        emailInput.value = "";
+      }
+    });
+
+    function showMessage(text, color) {
+      messageEl.textContent = text;
+      messageEl.style.color = color;
+    }
+  });
+</script>
+</body>
+
+</html>
