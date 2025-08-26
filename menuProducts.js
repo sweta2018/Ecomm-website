@@ -1,14 +1,14 @@
-// === menuProducts.js merged with wishlist.js ===
+
 
 const tabsContainer = document.querySelector(".category-tabs");
 const productList = document.querySelector(".product-list");
 const productTemplate = productList.querySelector(".product-card");
 
-// Clear existing tabs and products except hidden template
+
 tabsContainer.innerHTML = "";
 productList.querySelectorAll(".product-card:not([style*='display: none'])").forEach(el => el.remove());
 
-// === Utility Functions ===
+
 function getWishlist() {
   try {
     const wishlist = JSON.parse(localStorage.getItem("wishlist"));

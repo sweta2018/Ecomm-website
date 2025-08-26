@@ -117,7 +117,7 @@ function setupEventListeners(cart, products) {
         saveCart(cart);
         renderCart(cart, products);
       } else {
-        // Remove item when qty = 1 and − clicked
+       
         const index = cart.indexOf(item);
         if (index > -1) {
           cart.splice(index, 1);

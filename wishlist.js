@@ -23,7 +23,7 @@
     }
   }
 
-  // === Wishlist UI Button Initialization ===
+  
   window.initWishlistButtons = function () {
     const wishlistButtons = document.querySelectorAll(".add-to-wishlist-btn");
     const wishlist = getWishlist();

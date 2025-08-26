@@ -605,7 +605,7 @@
   });
 
   document.getElementById("confirmOrder").addEventListener("click", function () {
-    // Optional: Submit the form using JS or redirect
+   
     alert("Order placed successfully!");
     document.getElementById("paymentForm").submit();
   });
@@ -622,7 +622,7 @@
     subscribeBtn.addEventListener("click", () => {
       const email = emailInput.value.trim();
 
-      // Basic email validation
+     
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
       if (!email) {
@@ -630,13 +630,12 @@
       } else if (!emailRegex.test(email)) {
         showMessage("Please enter a valid email address.", "red");
       } else {
-        // Simulate subscription success
+        
         showMessage("Thank you for subscribing!", "green");
 
-        // Optional: Store in localStorage
-        // localStorage.setItem("subscribedEmail", email);
+        
 
-        // Clear the input
+        
         emailInput.value = "";
       }
     });
@@ -665,7 +664,7 @@
     loginLinks.forEach(link => link.style.display = "inline-block");
   }
 
-  // Login form logic
+  
   if (loginForm) {
     loginForm.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -684,7 +683,7 @@
     });
   }
 
-  // Logout logic
+  
   logoutBtns.forEach(btn => {
     btn.addEventListener("click", function () {
       localStorage.removeItem("isLoggedIn");

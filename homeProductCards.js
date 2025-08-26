@@ -4,7 +4,7 @@ async function loadProducts() {
   const tabTemplate = tabsContainer.querySelector(".category-tab");
   const productTemplate = productList.querySelector(".product-card");
 
-  // Remove all dynamic tabs/products while keeping the hidden templates
+
   tabsContainer.querySelectorAll(".category-tab:not([style*='display: none'])").forEach(el => el.remove());
   productList.querySelectorAll(".product-card:not([style*='display: none'])").forEach(el => el.remove());
 
@@ -15,7 +15,7 @@ async function loadProducts() {
 
     const categories = [...new Set(products.map(p => p.category))];
 
-    // Create category tabs
+    //  category tabs
     categories.forEach((cat, index) => {
       const tab = tabTemplate.cloneNode(true);
       tab.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);

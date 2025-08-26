@@ -676,13 +676,12 @@
       } else if (!emailRegex.test(email)) {
         showMessage("Please enter a valid email address.", "red");
       } else {
-        // Simulate subscription success
+        
         showMessage("Thank you for subscribing!", "green");
 
-        // Optional: Store in localStorage
-        // localStorage.setItem("subscribedEmail", email);
+      
 
-        // Clear the input
+       
         emailInput.value = "";
       }
     });

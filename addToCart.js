@@ -28,7 +28,7 @@ function isToastSuppressedPage() {
 }
 
 function addToCart(productId, button) {
-  // Check login status before proceeding
+
  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 if (!isLoggedIn) {
   alert("You need to login first to add items to your cart.");
